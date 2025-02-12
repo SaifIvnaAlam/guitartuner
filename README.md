@@ -1,16 +1,52 @@
-# guitartuner
+<h1 align="center">Guitar Tuner 🎸</h1>
 
-A new Flutter project.
+<p align="left">
+  Guitar Tuner helps you accurately tune your guitar by detecting the audio frequency of a played note and comparing it with the target note. It provides real-time feedback to ensure your guitar is perfectly in tune.
+</p>
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 How to Run
 
-A few resources to get you started if this is your first Flutter project:
+Follow these steps to run the Guitar Tuner app on your local machine:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/SaifIvnaAlam/guitartuner.git
+cd guitartuner
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 2️⃣ Install Flutter Dependencies
+Make sure Flutter is installed on your system. Then run:
+```bash
+flutter pub get
+```
+
+### 3️⃣ Run the App on an Emulator or Physical Device
+- To check connected devices:
+  ```bash
+  flutter devices
+  ```
+- To run the app:
+  ```bash
+  flutter run
+  ```
+
+### 4️⃣ (Optional) Build the APK for Android
+```bash
+flutter build apk --release
+```
+
+### 5️⃣ (Optional) Run on iOS Simulator (macOS only)
+```bash
+flutter run -d ios
+```
+
+---
+
+## ✅ Prerequisites
+- [Flutter SDK](https://flutter.dev/docs/get-started/install) (latest stable version)  
+- Android Studio or Xcode (for emulators)  
+- A physical Android/iOS device or emulator  
+
+
