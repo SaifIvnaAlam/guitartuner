@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:guitartuner/src/home/presentation/home_screen.dart';
+import 'package:guitartuner/src/home/presentation/home_page.dart';
 import 'package:guitartuner/src/home/application/pitch_cubit.dart';
 import 'package:pitch_detector_dart/pitch_detector.dart';
 import 'package:pitchupdart/instrument_type.dart';
@@ -40,11 +40,22 @@ class MyApp extends StatelessWidget {
             ),
           ],
           child: MaterialApp(
+          debugShowCheckedModeBanner: false,
             theme: ThemeData(
+              appBarTheme: AppBarTheme(
+                backgroundColor: Colors.grey.shade300,
+              ),
+              scaffoldBackgroundColor: Colors.grey.shade300,
               primarySwatch: Colors.blue,
+              textTheme: TextTheme(
+                bodyLarge: TextStyle(color: Colors.white),
+                bodySmall: TextStyle(
+                  color: Colors.white,
+                ),
+              )
             ),
             home: const HomeScreen(),
-          )
+        ),
       ),
     );
   }
