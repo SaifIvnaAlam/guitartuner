@@ -16,7 +16,7 @@ class PitchCubit extends Cubit<TunningState> {
   final PitchHandler _pitchupDart;
 
   PitchCubit(this._audioRecorder, this._pitchDetectorDart, this._pitchupDart)
-      : super(TunningState(note: "N/A", status: "Play something", fz: "0", expectedFq: '')) {
+      : super(TunningState(note: "N/A", status: "Play something", fq: 0, expectedFq: 0)) {
     _init();
   }
 
@@ -44,9 +44,9 @@ class PitchCubit extends Cubit<TunningState> {
           inspect(detectedPitch);
           _pitchupDart.handlePitch(detectedPitch.pitch).then((pitchResult) => {
                 emit(TunningState(
-                  fz: detectedPitch.pitch.toString(),
+                  fq: detectedPitch.pitch.toInt(),
                   note: pitchResult.note,
-                  expectedFq: pitchResult.expectedFrequency.toString(),
+                  expectedFq: pitchResult.expectedFrequency.toInt(),
                   status: pitchResult.tuningStatus.getDescription(),
                 ))
               });

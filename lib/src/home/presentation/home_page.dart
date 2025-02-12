@@ -24,11 +24,11 @@ class HomeScreen extends StatelessWidget {
                 style: const TextStyle(color: Colors.black87, fontSize: 65.0, fontWeight: FontWeight.bold),
               ),
               Text(
-                pitchCubitState.fz,
+                "${pitchCubitState.fq}",
                 style: const TextStyle(color: Colors.black87, fontSize: 65.0, fontWeight: FontWeight.bold),
               ),
               Text(
-                pitchCubitState.expectedFq,
+                "${pitchCubitState.expectedFq}",
                 style: const TextStyle(color: Colors.black87, fontSize: 65.0, fontWeight: FontWeight.bold),
               ),
               Text(
