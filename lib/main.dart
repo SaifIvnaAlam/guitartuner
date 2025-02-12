@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:guitartuner/home/home_screen.dart';
-import 'package:guitartuner/home/pitch_cubit.dart';
+import 'package:guitartuner/src/home/presentation/home_screen.dart';
+import 'package:guitartuner/src/home/application/pitch_cubit.dart';
 import 'package:pitch_detector_dart/pitch_detector.dart';
 import 'package:pitchupdart/instrument_type.dart';
 import 'package:pitchupdart/pitch_handler.dart';

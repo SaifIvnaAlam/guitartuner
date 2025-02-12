@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:guitartuner/home/pitch_cubit.dart';
+import 'package:guitartuner/src/home/application/pitch_cubit.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
